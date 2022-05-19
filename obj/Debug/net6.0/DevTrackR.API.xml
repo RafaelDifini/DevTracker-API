@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevTrackR.API</name>
+    </assembly>
+    <members>
+        <member name="M:DevTrackR.API.Controllers.PackagesController.GetAll">
+            <summary>
+            Listar Pacotes Cadastrados. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DevTrackR.API.Controllers.PackagesController.GetByCode(System.String)">
+            <summary>
+            Mostar dados do Pacote. 
+            </summary>
+            <param name="code">Insira o código do seu pacote.</param>
+            <returns></returns>
+            <response code="201">Pacote encontrado!</response>
+            <response code="401">Código Inválido.</response>
+        </member>
+        <member name="M:DevTrackR.API.Controllers.PackagesController.Post(DevTrackR.API.Models.AddPackageInputModel)">
+            <summary>
+            Cadastro de um pacote. 
+            </summary> 
+            <param name="model">Dados do pacote.</param>
+            <returns>Objeto recém-criado.</returns>
+            <response code="201">Cadastro realizado com sucesso. </response>
+            <response code="400">Dados inválidos.</response>
+        </member>
+        <member name="M:DevTrackR.API.Controllers.PackagesController.PostUpdate(System.String,DevTrackR.API.Models.AddPackageUpdateInputModel)">
+            <summary>
+            Atualizar dados do Pacote. 
+            </summary>
+            <param name="code">Insira o código do seu pacote.</param>
+            <param name="model">Dados Atualizados</param>
+            <returns></returns>
+            <response code="201">Pacote atualizado com sucesso.</response>
+            <response code="400">Código inválido.</response>
+        </member>
+    </members>
+</doc>
